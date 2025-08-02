@@ -13,9 +13,22 @@ button.addEventListener("click", function () {
     const newItem = document.createElement("li");
     newItem.textContent = taskText;
 
-    // Add it to the list
-    list.appendChild(newItem);
+    newItem.addEventListener("click",function() {
+      newItem.classList.toggle("completed");
+    });
 
+    const deleteButton = document.createElement("button");
+    deleteButton.textContent = "Delete [X]";
+    deleteButton.style.marginLeft = "5px";
+
+    deleteButton.addEventListener("click", function(e){
+      e.stopPropagation();
+      list.removeChild(newItem);
+    });
+
+    // Add it to the list
+    newItem.appendChild(deleteButton);
+    list.appendChild(newItem);
     // Clear the input box
     input.value = "";
   }
