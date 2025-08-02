@@ -2,6 +2,7 @@
 const input = document.getElementById("taskInput");
 const button = document.getElementById("addTaskButton");
 const list = document.getElementById("taskList");
+const completedTasks = document.getElementById("completedTasks");
 
 // Step 2: Add event listener to button
 button.addEventListener("click", function () {
@@ -18,17 +19,24 @@ button.addEventListener("click", function () {
     });
 
     const deleteButton = document.createElement("button");
-    deleteButton.textContent = "Delete [X]";
-    deleteButton.style.marginLeft = "5px";
+    deleteButton.textContent = "Press to Complete";
+    deleteButton.style.marginLeft = "10px";
+    deleteButton.style.backgroundColor = "purple";
+    deleteButton.style.border = "solid 1px black";
+    deleteButton.style.marginTop = "10px";
 
     deleteButton.addEventListener("click", function(e){
       e.stopPropagation();
       list.removeChild(newItem);
+      completedTasks.appendChild(newItem);
+      newItem.removeChild(deleteButton);
+      newItem.textContent = taskText + " Status: Completed.";
     });
 
-    // Add it to the list
     newItem.appendChild(deleteButton);
     list.appendChild(newItem);
+
+
     // Clear the input box
     input.value = "";
   }
