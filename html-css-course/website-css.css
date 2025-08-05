@@ -1,3 +1,7 @@
+.amazon-button:hover {
+    color : rgb(181, 120, 6);
+}
+
 .product-name{
     font-weight: bold;
 }
@@ -14,8 +18,17 @@
     border : none;
     border-radius: 15px;
     margin : 5px;
+    transition : opacity 0.15s;
+    font-size : 10;
 }
 
+.cart-button:hover{
+    opacity : 0.8;
+}
+
+.cart-button:active{
+    opacity : 0.5;
+}
 .buy-button {
     background-color : rgb(213, 134, 16);
     width : 100px;
@@ -23,4 +36,5 @@
     border : none;
     border-radius: 15px;
     margin : 5px;
+    font-size : 10;
 }   
