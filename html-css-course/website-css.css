@@ -1,0 +1,26 @@
+.product-name{
+    font-weight: bold;
+}
+
+.price{
+    color : rgb(0,118,0);
+
+}
+
+.cart-button {
+    background-color : rgb(255, 165, 20);
+    width : 100px;
+    height : 30px;
+    border : none;
+    border-radius: 15px;
+    margin : 5px;
+}
+
+.buy-button {
+    background-color : rgb(213, 134, 16);
+    width : 100px;
+    height : 30px;
+    border : none;
+    border-radius: 15px;
+    margin : 5px;
+}   

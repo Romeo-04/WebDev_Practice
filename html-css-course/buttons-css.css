@@ -6,6 +6,14 @@
         width : 105px;
         border-radius: 2.5px;
         cursor : pointer;
+        transition : opacity 0.2s;
+    }
+    .subscribe-button:hover{
+        opacity : 0.7;
+    }
+
+    .subscribe-button:active{
+        opacity : 0.3;
     }
 
     .join-button{
@@ -19,6 +27,16 @@
         margin: 5px;
         cursor : pointer;
         border-radius : 2px;
+        transition : background-color 1s, color 1s;
+    }
+
+    .join-button:hover {
+        background-color:blue;
+        color : white;
+    }
+
+    .join-button:active {
+        opacity : 0.7;
     }
 
     .tweet-button{
@@ -33,6 +51,9 @@
         font-family : 'Courier New';
         font-weight : bold;
         font-size : 15;
+    }
+    .tweet-button:hover{
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
     }
     .uber-button {
         background-color : black;
