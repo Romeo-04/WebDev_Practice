@@ -2,11 +2,11 @@
         background-color : rgb(164, 28, 28);
         color : white;
         border : none;
-        height : 30px;
-        width : 105px;
         border-radius: 2.5px;
         cursor : pointer;
         transition : opacity 0.2s;
+        padding : 10px;
+        vertical-align : top;    
     }
     .subscribe-button:hover{
         opacity : 0.7;
@@ -28,6 +28,7 @@
         cursor : pointer;
         border-radius : 2px;
         transition : background-color 1s, color 1s;
+        vertical-align : top;
     }
 
     .join-button:hover {
@@ -52,6 +53,7 @@
         font-weight : bold;
         font-size : 15;
         transition : box-shadow 0.2s;
+        vertical-align : top;
     }
     .tweet-button:hover{
         box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
@@ -64,6 +66,7 @@
         width : 90px;
         height : 30px;
         font-size : 10;
+        vertical-align : top;
     }
 
     .github-button{

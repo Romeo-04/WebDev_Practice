@@ -1,0 +1,29 @@
+.container-pagination{
+    background-color : white;
+    padding : 20px;
+    margin : auto;
+    width : 50%;
+    border : 2px solid rgb(9, 9, 135);
+    text-align : center;
+
+}
+
+.page1{
+    padding : 7px;
+}
+
+.page2{
+    padding : 7px;
+}
+
+.page3{
+    padding : 7px;
+}
+
+.page4{
+    padding : 7px;
+}
+
+.page5{
+    padding : 7px;
+}
