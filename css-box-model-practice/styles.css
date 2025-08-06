@@ -11,7 +11,7 @@
 .container-stretch {
     margin : auto;
     width : 50%;
-    border : 1px solid green;
+    border : 2px solid green;
     text-align : center;
     padding : 20px;
 }
@@ -50,4 +50,28 @@
 
 .page5{
     padding : 7px;
+}
+
+.container-shadow{
+    margin : auto;
+    width : 50%;
+    text-align : center;
+    padding : 20px;
+    border : 2px solid salmon;
+    background-color : white;
+}
+
+.shadow-button{
+    background-color : green;
+    border : none;
+    color : white;
+    cursor : pointer;
+    width : 70px;
+    height : 30px;
+}
+
+.shadow-button:hover {
+    box-shadow : 5px 5px 5px rgba(0,0,0,0.5);
+    margin-bottom : 2px;
+    margin-right : 2px;
 }
