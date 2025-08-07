@@ -1,0 +1,16 @@
+.video-title{
+    font-family : arial;
+    font-size : 18px;
+    font-weight : bold;
+    text-align : left;
+    width : 300px;
+    line-height : 24px;
+    margin : 10px;
+}
+
+.video-stats {
+    font-family : arial;
+    font-size : 14px;
+    color : rgb(96,96,96);
+    margin : 10px;
+}
