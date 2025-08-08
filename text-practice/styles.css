@@ -1,16 +1,46 @@
-.video-title{
+p {
     font-family : arial;
+}
+.video-title{
     font-size : 18px;
     font-weight : bold;
     text-align : left;
-    width : 300px;
+    width : 280px;
     line-height : 24px;
     margin : 10px;
 }
 
 .video-stats {
-    font-family : arial;
     font-size : 14px;
     color : rgb(96,96,96);
     margin : 10px;
+}
+
+.video-author {
+    color : rgb(96,96,96);
+    margin-top : 20px;
+    margin-bottom : 20px;
+    margin-left : 10px;
+    font-size : 14px;
+}
+
+.video-description {
+    font-size : 14px;
+    color : rgb(96,96,96);
+    margin-left : 10px;
+    width : 280px;
+    line-height : 22px;
+}
+
+.shop-text {
+    font-size : 14px;
+    background-color : rgb(187, 25, 25);
+    color : white;
+    text-align : center;
+    padding : 20px;
+
+}
+
+.shop-now:hover {
+    text-decoration : underline;
 }
