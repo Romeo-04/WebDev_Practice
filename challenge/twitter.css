@@ -5,9 +5,27 @@
     object-fit: cover;  
 }
 
-.img-container {
-    position : relative;
+.img-container{
+    display : flex;
+    align-items : center;
+    justify-content: center;
 }
-.type-bar {
 
+.type-bar {
+    width : 300px;
+    height : 50px;
+    margin-left : 10px;
+    border : none;
+    font-size : 15px;
+}
+
+.tweet-button {
+    background-color : rgb(67, 145, 255);
+    color : white;
+    border : none;
+    border-radius : 20px;
+    width : 70px;
+    padding : 10px;
+    font-weight : bold;
+    cursor : pointer;
 }
