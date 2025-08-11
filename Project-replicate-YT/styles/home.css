@@ -1,14 +1,18 @@
 .thumbnail1 {
     width : 300px;
     object-fit : cover;
+    display : block;
 }
 
 .search-bar {
     font-size : 20px;
-    margin : auto;
-    
+    margin : 10px;
 }
 
 .video-title {
     width : 300px;
+}
+
+.video-author,
+.video-stats {
 }
