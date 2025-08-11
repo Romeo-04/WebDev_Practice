@@ -7,19 +7,21 @@
     border-radius : 5px;
     border : 1px solid;
     border-color : gray;
+    padding-left : 10px;
 }
 
 .email {
     display:block;
-    width : 250px;
+    width : 258px;
     height : 30px;
     border-radius : 5px;
     border : 1px solid;
     border-color : gray;
+    padding-left : 10px;
 }
 
 .submit-button{
-    width : 255px;
+    width : 271px;
     height : 30px;
     margin-top : 10px;
     color : white;
@@ -29,4 +31,7 @@
 }
 .container {
     padding : 20px;
+    margin : auto;
+    justify-content : center;
+    align-items : center;
 }
