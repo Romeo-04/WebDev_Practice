@@ -11,6 +11,7 @@
 }
 
 .video-title {
+    margin-top : 0;
 }
 
 .first-vid-container {
@@ -23,6 +24,7 @@
 .profile-container {
     display : inline-block;
     width : 50px;
+    vertical-align : top;
 }
 
 .video-info {
@@ -31,5 +33,11 @@
 }
 
 .profile-picture {
-    width : 50px;
+    width : 40px;
+    vertical-align : top;
+    border-radius : 50px;
+}
+
+.thumbnail-row {
+    margin-bottom : 12px;
 }
