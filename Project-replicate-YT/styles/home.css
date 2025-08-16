@@ -5,9 +5,7 @@ p {
 }
 
 .thumbnail1 {
-    width : 300px;
-    object-fit : cover;
-    display : block;
+    width : 100%;
 }
 
 .search-bar {
@@ -32,12 +30,7 @@ p {
 .video-author {
     margin-bottom : 4px;
 }
-.first-vid-container {
-    width: 300px;
-    display :inline-block;
-    vertical-align : top;
-    margin-right : 15px;
-}
+
 
 .profile-picture {
     width : 40px;
@@ -52,4 +45,11 @@ p {
 .video-info-grid {
     display : grid;
     grid-template-columns : 50px 1fr;
+}
+
+.video-grid {
+    display : grid;
+    grid-template-columns : 1fr 1fr 1fr;
+    column-gap : 16px;
+    row-gap : 40px;
 }
