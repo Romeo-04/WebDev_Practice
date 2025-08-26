@@ -41,4 +41,6 @@
     grid-template-columns : 1fr 1fr 1fr;
     column-gap : 16px;
     row-gap : 40px;
+    background-color : rgb(231, 231, 231);
+    padding-top : 20px;
 }
