@@ -65,6 +65,7 @@
     border : 1px solid gray;
     border-radius : 2px;
     box-shadow : inset 1px 2px 3px rgba(0,0,0,0.05);
+    width:0;
 }
 
 .search-bar::placeholder{
@@ -72,8 +73,11 @@
     font-size : 14px;
 }
 .right-section {
-    background-color: lightgreen;
     width : 200px;
+    display : flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink : 0;
 }
 
 .upload-icon, .apps-icon, .notifications-icon {
@@ -86,4 +90,5 @@
     height : 32px;
     margin-right : 20px;
     cursor : pointer;
+    border-radius : 16px;
 }
