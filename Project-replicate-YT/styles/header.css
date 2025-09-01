@@ -1,5 +1,5 @@
 .header {
-    height : 55px;
+    height : 60px;
     display: flex;
     flex-direction : row;
     justify-content: space-between;
@@ -20,7 +20,7 @@
 .menu {
     height : 24px;
     margin-left : 24px;
-    margin-right : 20px;
+    margin-right : 24px;
 }
 
 .youtube-logo {
