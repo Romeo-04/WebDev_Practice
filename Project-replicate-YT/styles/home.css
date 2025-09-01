@@ -42,5 +42,6 @@
     column-gap : 16px;
     row-gap : 40px;
     background-color : rgb(231, 231, 231);
-    padding-top : 20px;
+    padding : 20px;
+    margin-left : 80px;
 }
