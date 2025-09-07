@@ -94,13 +94,33 @@
     cursor : pointer;
 }
 
+.notifications-container{
+    position : relative;
+}
+
 .notifications-icon {
     height : 24px;
     margin-right : 20px;
     cursor : pointer;
-    position : fixed;
+
 }
 
+.notifications-number{
+    position : absolute;
+    background-color : rgb(190, 6, 6);
+    font-size : 10px;
+    top : -3px;
+    right : 13px;
+    color : white;
+    height : 14px;
+    width : 10px;
+    border-radius : 10px;
+    text-align : center;
+    padding-top : 2px;
+    padding-left : 3px;
+    padding-right : 3px;
+    border : 2px solid white;
+}
 
 .my-channel {
     height : 32px;
