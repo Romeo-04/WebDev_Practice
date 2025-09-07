@@ -1,7 +1,24 @@
 .thumbnail1 {
     width : 100%;
+    position : relative;
 }
 
+.thumbnail-row {
+    position : relative;
+}
+
+.video-length{
+    position : absolute;
+    background-color : black;
+    color : white;
+    bottom : 10px;
+    right : 7px;
+    height : 20px;
+    width : 35px;
+    font-size : 14px;
+    padding : 2px;
+    padding-bottom : 0;
+}
 
 .video-title {
     margin-top : 0;

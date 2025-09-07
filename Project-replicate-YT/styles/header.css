@@ -9,6 +9,7 @@
     right : 0;
     background-color : white;
     border-bottom : 0.5px solid rgb(157, 157, 157);
+    z-index : 100;
 }
 
 .left-section {
@@ -16,11 +17,11 @@
     display : flex;
 }
 
-
 .menu {
     height : 24px;
     margin-left : 24px;
     margin-right : 24px;
+    cursor : pointer;
 }
 
 .youtube-logo {
@@ -37,7 +38,7 @@
 }
 
 .search-button{
-    height : 40px;
+    height : 39px;
     width : 66px;
     background-color : rgb(240,240,240);
     border : 1px solid gray;
@@ -87,11 +88,19 @@
     flex-shrink : 0;
 }
 
-.upload-icon, .apps-icon, .notifications-icon {
+.upload-icon, .apps-icon {
     height : 24px;
     margin-right : 20px;
     cursor : pointer;
 }
+
+.notifications-icon {
+    height : 24px;
+    margin-right : 20px;
+    cursor : pointer;
+    position : fixed;
+}
+
 
 .my-channel {
     height : 32px;
