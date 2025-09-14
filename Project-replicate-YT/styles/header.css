@@ -59,11 +59,12 @@
     padding-right : 10px;
     padding-bottom : 3px;
     border-radius : 3px;
-    bottom : -25px;
+    bottom : -30px;
     left : 0px;
     opacity : 0;
     transition : opacity 0.2s;
 }
+
 .search-button:hover .search-text {
     opacity : 1;
 }
@@ -79,6 +80,29 @@
     border-radius : 20px;
     border : none gray;
     cursor : pointer;
+    position : relative;
+}
+
+.voice-button .voice-text {
+    font-family : roboto, arial;
+    font-size : 14px;
+    color : white;
+    background-color : gray;
+    position : absolute;
+    padding-top : 3px;
+    padding-left : 10px;
+    padding-right : 10px;
+    padding-bottom : 3px;
+    border-radius : 3px;
+    bottom : -30px;
+    left : -55px;
+    opacity : 0;
+    transition : opacity 0.2s;
+    white-space: nowrap;
+}
+
+.voice-button:hover .voice-text {
+    opacity : 1;
 }
 
 .voice-icon{
@@ -106,12 +130,65 @@
     align-items: center;
     justify-content: space-between;
     flex-shrink : 0;
+    position : relative;
+}
+
+.upload-container {
+    position : relative;
 }
 
 .upload-icon, .apps-icon {
     height : 24px;
     margin-right : 20px;
     cursor : pointer;
+}
+
+.upload-container .upload-text {
+    font-family : roboto, arial;
+    font-size : 14px;
+    color : white;
+    background-color : gray;
+    position : absolute;
+    padding-top : 3px;
+    padding-left : 10px;
+    padding-right : 10px;
+    padding-bottom : 3px;
+    border-radius : 3px;
+    bottom : -30px;
+    left : -10px;
+    opacity : 0;
+    transition : opacity 0.2s;
+    white-space: nowrap;
+}
+
+.upload-container:hover .upload-text {
+    opacity : 1;
+}
+
+.apps-container {
+    position : relative;
+}
+
+.apps-container .apps-text {
+    font-family : roboto, arial;
+    font-size : 14px;
+    color : white;
+    background-color : gray;
+    position : absolute;
+    padding-top : 3px;
+    padding-left : 10px;
+    padding-right : 10px;
+    padding-bottom : 3px;
+    border-radius : 3px;
+    bottom : -30px;
+    left : -30px;
+    opacity : 0;
+    transition : opacity 0.2s;
+    white-space: nowrap;
+}
+
+.apps-container:hover .apps-text {
+    opacity : 1;
 }
 
 .notifications-container{
@@ -122,7 +199,6 @@
     height : 24px;
     margin-right : 20px;
     cursor : pointer;
-
 }
 
 .notifications-number{
@@ -140,6 +216,28 @@
     padding-left : 3px;
     padding-right : 3px;
     border : 2px solid white;
+}
+
+.notifications-container .notifications-text {
+    font-family : roboto, arial;
+    font-size : 14px;
+    color : white;
+    background-color : gray;
+    position : absolute;
+    padding-top : 3px;
+    padding-left : 10px;
+    padding-right : 10px;
+    padding-bottom : 3px;
+    border-radius : 3px;
+    bottom : -30px;
+    left : -40px;
+    opacity : 0;
+    transition : opacity 0.2s;
+    white-space: nowrap;
+}
+
+.notifications-container:hover .notifications-text {
+    opacity : 1;
 }
 
 .my-channel {
