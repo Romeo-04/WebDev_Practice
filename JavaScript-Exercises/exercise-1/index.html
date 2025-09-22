@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> Cart Quantity </title>
-        <script src="script.js" defer></script>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <h1> Cart Quantity </h1>
-        <button onclick = "console.log('Cart Quantity: ' + cartQuantity)"> Show Quantity </button>
-        <button onclick = "console.log('Cart Quantity: ' + (cartQuantity += 1))"> Add to Cart </button>
-        <button onclick = "console.log('Cart Quantity: ' + (cartQuantity += 2))"> +2 </button>
-        <button onclick = "console.log('Cart Quantity: ' + (cartQuantity += 3))"> +3 </button>
-        <button onclick = "console.log('Cart Quantity: ' + (cartQuantity = 0))"> Reset Cart </button>
-    </body>
+<head>
+    <title> Simple calculator </title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+  <h1>Simple calculator</h1>
+
+  <button onclick="calculation += '1'; console.log(calculation);">1</button>
+  <button onclick="calculation += '2'; console.log(calculation);">2</button>
+  <button onclick="calculation += '3'; console.log(calculation);">3</button>
+
+  <button onclick="calculation += '+'; console.log(calculation);">+</button>
+
+  <button onclick="console.log(eval(calculation));">=</button>
+</body>
 </html>
