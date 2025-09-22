@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>JavaScript Practice</title>
+        <title> Cart Quantity </title>
         <script src="script.js" defer></script>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <h2>Adults Plain Cotton T-shirt</h2>
-        <h3> Price: $7.99</h3>
-        <button class="add-cart-btn" onclick="alert('Item added added to Cart!')"> Add to Cart </button>
-        <button class="buy-now-btn" onclick="alert('Purchased!')">Buy Now</button>
+        <h1> Cart Quantity </h1>
+        <button onclick = "console.log('Cart Quantity: ' + cartQuantity)"> Show Quantity </button>
+        <button onclick = "console.log('Cart Quantity: ' + (cartQuantity += 1))"> Add to Cart </button>
+        <button onclick = "console.log('Cart Quantity: ' + (cartQuantity += 2))"> +2 </button>
+        <button onclick = "console.log('Cart Quantity: ' + (cartQuantity += 3))"> +3 </button>
+        <button onclick = "console.log('Cart Quantity: ' + (cartQuantity = 0))"> Reset Cart </button>
     </body>
 </html>
