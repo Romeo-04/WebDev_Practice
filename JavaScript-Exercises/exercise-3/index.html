@@ -7,17 +7,19 @@
     <script src="script.js"></script>
 </head>
 
-<body style = "background-color : lightblue; position:relative;">
-    <div class = "main-container">
-        <h2>Coin Flip Game</h2>
-        <h3> What's your guess? </h3>
-        <button class="heads-button" onclick="flipCoin('heads')">Heads</button>
-        <button class="tails-button" onclick="flipCoin('tails')">Tails</button>
+<body>
+    <div class="main-container">
+        <h2 class="game-title">Coin Flip Game</h2>
+        <h3 class="guess-title"> What's your guess? </h3>
+        <div class="button-container">
+            <button class="heads-button" onclick="flipCoin('heads')">Heads</button>
+            <button class="tails-button" onclick="flipCoin('tails')">Tails</button>
+        </div>
         <div id="result"></div>
         <div id="scoreboard">
             <p>Wins: <span id="wins">0</span></p>
             <p>Losses: <span id="losses">0</span></p>
-    </div>
+        </div>
 </body>
 
 </html>
