@@ -1,0 +1,28 @@
+.main-container {
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+    height : 500px;
+    padding-left : 16px;
+    padding-right : 16px;
+    background-color : #202020;
+    color : white;
+    flex-direction: column;
+    margin-top : 80px;
+    width : 400px;
+    position : absolute;
+    left: 550px;
+    right : 500px;
+}
+
+.heads-button {
+    background-color : rgb(67, 166, 67);
+    border : none;
+    color : white;
+    height : 50px;
+    width : 100px;
+    border-radius : 10px;
+    font-size : 20px;
+    font-family :Arial, Helvetica, sans-serif;
+    cursor : pointer;
+}
