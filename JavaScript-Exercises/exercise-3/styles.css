@@ -39,13 +39,14 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
+    max-height : 200px;
 }
 
 .heads-button {
-    background-color : rgb(67, 166, 67);
+    background-color : rgb(111, 186, 111);
     border : none;
     color : white;
-    height : 50px;
+    height : 40px;
     width : 100px;
     border-radius : 10px;
     font-size : 17px;
@@ -57,17 +58,17 @@ body {
 }
 
 .heads-button:hover {
-    background-color : rgb(34, 134, 34);
+    background-color :rgb(111, 186, 111);
     box-shadow : 0px 4px 8px rgba(255, 255, 255, 0.2);
     height : 48px;
     width : 98px;
 }
 
 .tails-button {
-    background-color : rgb(67, 166, 67);
+    background-color : rgb(111, 186, 111);
     border : none;
     color : white;
-    height : 50px;
+    height : 40px;
     width : 100px;
     border-radius : 10px;
     font-size : 17px;
@@ -79,7 +80,7 @@ body {
 }
 
 .tails-button:hover {
-    background-color : rgb(34, 134, 34);
+    background-color : rgb(111, 186, 111);
     box-shadow : 0px 4px 8px rgba(255, 255, 255, 0.2);
     height : 48px;
     width : 98px;
@@ -98,4 +99,11 @@ body {
     box-shadow: 5px 4px 8px rgba(255, 255, 255, 0.2);
     transition : background-color 0.3s, box-shadow 0.3s;
     margin-top : 20px;
+}
+
+.reset-button:hover {
+    background-color : rgb(179, 34, 34);
+    box-shadow : 0px 4px 8px rgba(255, 255, 255, 0.2);
+    height : 38px;
+    width : 118px;
 }
