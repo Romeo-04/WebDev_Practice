@@ -8,6 +8,14 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <button> hello </button>
+    <p> Youtube Subscribe Button </p>
+    <button class = "js-button" onclick = "subscribed()">Subscribe</button>
+
+    <p> Amazong shippin calculator</p>
+    <p> Orders under $40 = +$10 shipping </p>
+    <p> Orders $40 and over = Free shipping </p>
+    <input type="number" class = "js-order" placeholder="Enter your order amount">
+    <button class = "js-shipping" onclick = "calculateShipping('.js-order')">Calculate</button>
+    <p id = "result"></p>
 </body>
 </html>
