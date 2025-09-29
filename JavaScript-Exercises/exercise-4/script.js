@@ -59,3 +59,8 @@ function resetGame(){
     document.querySelector('.losses').innerHTML = `Losses: ${scores.losses}`;
     document.querySelector('.ties').innerHTML = `Ties: ${scores.ties}`;
 }
+
+function showText(event){
+    document.querySelector('.js-output').innerHTML = document.querySelector('.js-text').value;
+
+}
