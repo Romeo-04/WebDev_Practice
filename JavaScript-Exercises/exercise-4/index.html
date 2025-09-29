@@ -14,7 +14,7 @@
     <p> Amazong shippin calculator</p>
     <p> Orders under $40 = +$10 shipping </p>
     <p> Orders $40 and over = Free shipping </p>
-    <input type="number" class = "js-order" placeholder="Enter your order amount">
+    <input type="number" class = "js-order" onkeydown="if(event.key === 'Enter') calculateShipping('.js-order');" placeholder="Enter your order amount" >
     <button class = "js-shipping" onclick = "calculateShipping('.js-order')">Calculate</button>
     <p id = "result"></p>
 
