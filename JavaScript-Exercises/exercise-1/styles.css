@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     margin-top : 100px;
+    padding : 10px 20px 10px 20px;
 }
 
 .inner-calculator-container {
@@ -15,11 +16,10 @@
 .display-container {
     background-color : rgb(116, 115, 115);
     height : 50px;
-    width : 150px;
+    width : 163px;
     margin-bottom : 20px;
     font-size : 15px;
-    margin-left : 5px;
-    padding-right : 10px;
+    text-align: right;
     border-radius : 5px;
     border : 2px solid black;
 }
@@ -57,7 +57,17 @@
     background-color : red;
     color : white;
     height : 30px;
-    width : 80px;
+    width : 163px;
     margin : 5px 5px 5px 5px;
     border-radius : 5px;
+    font-family : 'Bitcount Prop Single', sans-serif;
+}
+
+.display-input {
+    color : white;
+    font-size : 35px;
+    margin-bottom : 10px;
+    margin-right: 10px;
+    font-family : 'Bitcount Prop Single', sans-serif;
+    margin-top : 10px;
 }
