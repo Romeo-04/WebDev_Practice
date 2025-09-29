@@ -17,5 +17,15 @@
     <input type="number" class = "js-order" placeholder="Enter your order amount">
     <button class = "js-shipping" onclick = "calculateShipping('.js-order')">Calculate</button>
     <p id = "result"></p>
+
+    <p> Rock paper scissors game</p>
+    <button class = "js-rock" onclick = "playGame('rock')"> Rock </button>
+    <button class = "js-paper" onclick = "playGame('paper')"> Paper </button>
+    <button class = "js-scissors" onclick = "playGame('scissors')"> Scissors </button>
+    <p class="wins"></p>
+    <p class="losses"></p>
+    <p class="ties"></p>
+
+    <button class="js-reset" onclick="resetGame()">Reset Game</button>
 </body>
 </html>
