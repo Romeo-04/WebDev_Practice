@@ -54,13 +54,13 @@
 }
 
 .clear-button {
-    background-color : red;
+    background-color : rgb(200, 43, 43);
     color : white;
     height : 30px;
-    width : 163px;
+    width : 73px;
     margin : 5px 5px 5px 5px;
     border-radius : 5px;
-    font-family : 'Bitcount Prop Single', sans-serif;
+    font-family : 'Courier New', Courier, monospace;
 }
 
 .display-input {
@@ -70,4 +70,14 @@
     margin-right: 10px;
     font-family : 'Bitcount Prop Single', sans-serif;
     margin-top : 10px;
+}
+
+.delete-button {
+    background-color : rgb(200, 43, 43);
+    color : white;
+    height : 30px;
+    width : 73px;
+    margin : 5px 5px 5px 5px;
+    border-radius : 5px;
+    font-family : 'Courier New', Courier, monospace;
 }

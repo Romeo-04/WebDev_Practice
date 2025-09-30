@@ -15,3 +15,8 @@ function finalCalculate(){
     calculation = eval(calculation);
     document.getElementById("display-input").innerText = calculation;
 }
+
+function deleteLastEntry(){
+    calculation = calculation.slice(0, -1);
+    document.getElementById("display-input").innerText = calculation;
+}
