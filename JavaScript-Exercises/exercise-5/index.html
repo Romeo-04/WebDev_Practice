@@ -5,8 +5,15 @@
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
-<body>
+<body style="font-family:'Courier New', Courier, monospace;">
     <h3> Youtube Subscribe Button </h3>
-    <button class = "js-subscribe-button subscribed-button" onclick ="subscribe();"> Subscribe </button>
+    <button class = "js-subscribe-button subscribed-button" onclick ="subscribe();"> 
+        Subscribe 
+    </button>
+
+    <h3> Amazon Shipping Calculator  </h3>
+    <input type="number" id="price" placeholder="Enter Price">
+    <button onclick="calculateShipping();"> Calculate </button>
+    <p class="total-cost" id="shipping-cost"></p>
 </body>
 </html>

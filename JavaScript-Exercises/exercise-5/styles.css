@@ -11,9 +11,14 @@
     padding-right : 10px;
     font-weight : bold;
     cursor: pointer;
+    
 }
 
 .is-subscribed {
     background-color : rgb(122, 120, 120);
+    width : 120px;
+}
 
+.total-cost {
+    font-weight : bold;
 }
