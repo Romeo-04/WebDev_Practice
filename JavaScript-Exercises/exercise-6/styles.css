@@ -10,18 +10,57 @@
     display : flex;
     flex-direction : row;
     justify-content : space-between;
-    width : 300px;
+    width : 400px;
 }
 
 .item-list {
     list-style-type: none;
-
+    padding : 20px;
 }
 
+.game {
+    background-color : rgb(197, 56, 56);
+    border : 2px solid black;
+    padding : 12px;
+    margin : 10px;
+    text-align : center;
+    font-family : Arial, sans-serif;
+    font-weight : bold;
+    color : white;
+    border-radius : 10px;
+    cursor : pointer;
+}
+
+.music {
+    background-color : rgb(56, 197, 130);
+    border : 2px solid black;
+    padding : 12px;
+    margin : 10px;
+    text-align : center;
+    font-family : Arial, sans-serif;
+    font-weight : bold;
+    color : white;
+    border-radius : 10px;
+    cursor : pointer;
+}
+
+.tech {
+    background-color : rgb(56, 130, 197);
+    border : 2px solid black;
+    padding : 12px;
+    margin : 10px;
+    text-align : center;
+    font-family : Arial, sans-serif;
+    font-weight : bold;
+    color : white;
+    border-radius : 10px;
+    cursor : pointer;
+}
+    
 button {
     background-color : rgb(178, 178, 178);
     border : none;
-    padding : 10px;
+    padding : 12px;
     width : 80px;
     font-size : 16px;
     font-family : Arial, sans-serif;

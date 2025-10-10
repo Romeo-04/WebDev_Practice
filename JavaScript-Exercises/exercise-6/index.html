@@ -7,17 +7,17 @@
     <title>Exercise 6</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
-
-</html>
+</head>
 
 <body>
     <div class="container">
         <div class="button-container">
+            <button id="all-button" onclick="filterItems('all')">All</button>
             <button id="game-button" onclick="filterItems('game')">Game</button>
             <button id="music-button" onclick="filterItems('music')">Music</button>
             <button id="tech-button" onclick="filterItems('tech')">Tech</button>
         </div>
-        <ul id="item-list">
+        <ul class="item-list" id="item-list">
             <li class="game">The Legend of Zelda</li>
             <li class="game">Super Mario Odyssey</li>
             <li class="game">Minecraft</li>
@@ -29,5 +29,8 @@
             <li class="tech">iPhone 13</li>
             <li class="tech">Samsung Galaxy S21</li>
             <li class="tech">MacBook Pro</li>
+        </ul>
     </div>
 </body>
+
+</html>
