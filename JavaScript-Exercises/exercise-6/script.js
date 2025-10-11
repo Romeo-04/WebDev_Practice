@@ -1,3 +1,14 @@
+class buttonState {
+	constructor(button){
+		this.button = button;
+	}
+	toggle(){
+		this.button.classList.toggle('active');
+	}
+	isActive(){
+		
+	}
+}
 function filterItems(category) {
 	// Get the list container and its list items
 	var list = document.getElementById('item-list');
