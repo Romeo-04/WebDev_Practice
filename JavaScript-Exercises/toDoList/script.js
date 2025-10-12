@@ -1,17 +1,15 @@
-const taskList = [];
-
 function addTask(){
     const taskInput = document.getElementById('taskInput');
-    
-    for(let i = 0; i < taskList.length; i++){
-        if(taskList[i] )
-        taskList.push(taskInput.value);
+    const taskContainer = document.getElementById('taskContainer');
+    const task = taskInput.value.trim();
+
+    if(task !== ''){
+        document.getElementById('taskContainer').innerHTML += `<li>${task}</li>`;
         taskInput.value = '';
-        displayTasks();
-        return;
     }
+    else{
+        alert('please enter a task monkey');
+    }
+
 }
 
-function displayTasks(){
-    for()
-}

@@ -7,12 +7,16 @@
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
 </head>
+
 <body>
     <div class="container">
         <h1>To-Do List</h1>
         <input type="text" id="taskInput" placeholder="Add a new task...">
         <button id="addTaskButton" onclick="addTask()">Add Task</button>
-        <p id="taskContainer"></p>
+        <ul id="taskContainer">
+            <!-- Tasks will be added here -->
+        </ul>
+        <button id="clearTaskButton" onclick="clearTask()">Clear Tasks</button>
     </div>
 </body>
 </html>
