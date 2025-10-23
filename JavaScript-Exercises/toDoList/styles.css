@@ -1,0 +1,27 @@
+.task-button{
+    background-color : green;
+    color : white;
+    border : none;
+    height : 25px;
+}
+
+.input-field {
+    width : 150px;
+    height : 25px;
+
+}
+
+.clear-task-button {
+    background-color : rgb(157, 20, 20);
+    color : white;
+    border : none;
+    height : 25px;
+} 
+
+.big-container{
+    justify-content: center;
+    align-items: center;
+    display : flex;
+    flex-direction : column;
+    margin-top : 200px;
+}

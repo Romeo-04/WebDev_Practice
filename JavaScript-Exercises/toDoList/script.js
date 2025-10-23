@@ -4,12 +4,16 @@ function addTask(){
     const task = taskInput.value.trim();
 
     if(task !== ''){
-        document.getElementById('taskContainer').innerHTML += `<li>${task}</li>`;
-        taskInput.value = '';
+        document.getElementById('taskContainer').innerHTML += `<li>${task} <button> Delete </button> </li>`;
+        taskInput.value = ''; 
     }
     else{
         alert('please enter a task monkey');
     }
 
+}
+
+function clearTask(){
+    document.getElementById('taskContainer').innerHTML = '';
 }
 
