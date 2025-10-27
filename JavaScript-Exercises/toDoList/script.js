@@ -1,45 +1,40 @@
+// Simple TODO list: keep the array as source-of-truth and always rebuild the HTML when
+// the array changes. This avoids index mismatches and shadowing bugs.
 let todoList = [];
-let todoListHTML = '';
-todoListHTML = document.getElementById("todoListHTML").innerHTML;
 
 function addTask(){
-    
     const taskInput = document.getElementById("taskInput");
     const task = taskInput.value.trim();
 
     if(task){
         todoList.push(task);
-        let i = todoList.length - 1;
-
-        todoListHTML += `<li>${task}</li> <button onclick="deleteTask(${i});
-        "> Delete </button>`;
-
-        console.log(todoListHTML);
-        console.log(todoList);
-        document.getElementById("todoListHTML").innerHTML = todoListHTML;
-    }
-
-    else {
+        taskInput.value = '';
+        displayTask();
+    } else {
         alert('Enter task monkey');
     }
-} 
+}
 
-function deleteTask(e){
-    for(let i = 0; i < todoList.length; i++){
-        if(i === e){
-            todoList.splice(i,1);
-            console.log(todoList);
-        }
+function deleteTask(index){
+    // remove the item at the given index then re-render
+    if(typeof index === 'number' && index >= 0 && index < todoList.length){
+        todoList.splice(index, 1);
+        displayTask();
     }
-    displayTask();
-
 }
 
 function displayTask(){
-    for(let i = 0; i < todoList.length; i++){
-        let task = todoList[i];
-        let i = todoList.length - 1;
+    const container = document.getElementById("todoListHTML");
+    if(!container) return; // defensive: element might not exist yet
 
-        todoListHTML += `<li>${task}</li> <button onclick="deleteTask(${i})`;
+    let html = '';
+    for(let i = 0; i < todoList.length; i++){
+        const task = todoList[i];
+        html += `<li>${task} <button onclick="deleteTask(${i})">Delete</button></li>`;
     }
+
+    container.innerHTML = html;
 }
+
+// Optionally render any preexisting tasks on load
+document.addEventListener('DOMContentLoaded', displayTask);
