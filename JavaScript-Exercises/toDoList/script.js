@@ -5,10 +5,13 @@ let todoList = [];
 function addTask(){
     const taskInput = document.getElementById("taskInput");
     const task = taskInput.value.trim();
+    const dueDateInput = document.getElementById("dueDateInput");
+    const dueDate = dueDateInput.value;
 
     if(task){
-        todoList.push(task);
+        todoList.push({name: task, dueDate: dueDate});
         taskInput.value = '';
+        dueDateInput.value = '';
         displayTask();
     } else {
         alert('Enter task monkey');
@@ -25,12 +28,14 @@ function deleteTask(index){
 
 function displayTask(){
     const container = document.getElementById("todoListHTML");
+    const {name, dueDate} = todoList;
+
     if(!container) return; // defensive: element might not exist yet
 
     let html = '';
     for(let i = 0; i < todoList.length; i++){
         const task = todoList[i];
-        html += `<li>${task} <button onclick="deleteTask(${i})">Delete</button></li>`;
+        html += `<li>${task.name} (Due: ${task.dueDate})<button onclick="deleteTask(${i})">Delete</button></li>`;
     }
 
     container.innerHTML = html;
