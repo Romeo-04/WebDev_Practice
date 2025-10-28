@@ -1,45 +1,31 @@
-// Simple TODO list: keep the array as source-of-truth and always rebuild the HTML when
-// the array changes. This avoids index mismatches and shadowing bugs.
-let todoList = [];
+let todoList = []
 
 function addTask(){
-    const taskInput = document.getElementById("taskInput");
+    const taskInput = document.getElementById('taskInput');
+    const dueDateInput = document.getElementById('dueDateInput');
     const task = taskInput.value.trim();
-    const dueDateInput = document.getElementById("dueDateInput");
     const dueDate = dueDateInput.value;
 
-    if(task){
-        todoList.push({name: task, dueDate: dueDate});
+    if(task && dueDate){
+        todoList.push({task,dueDate});
         taskInput.value = '';
         dueDateInput.value = '';
-        displayTask();
-    } else {
-        alert('Enter task monkey');
+        renderTasks();
     }
+}
+
+function renderTasks(){
+    const taskList = document.getElementById('todoListHTML');
+    taskList.innerHTML = '';
+
+    todoList.forEach((item,index) => {
+        const li = document.createElement('li');
+        li.innerHTML =`${item.task} - Due: ${item.dueDate} <button onclick="deleteTask(${index})">Delete</button>`;
+        taskList.appendChild(li);
+    })
 }
 
 function deleteTask(index){
-    // remove the item at the given index then re-render
-    if(typeof index === 'number' && index >= 0 && index < todoList.length){
-        todoList.splice(index, 1);
-        displayTask();
-    }
+    todoList.splice(index, 1);
+    renderTasks();
 }
-
-function displayTask(){
-    const container = document.getElementById("todoListHTML");
-    const {name, dueDate} = todoList;
-
-    if(!container) return; // defensive: element might not exist yet
-
-    let html = '';
-    for(let i = 0; i < todoList.length; i++){
-        const task = todoList[i];
-        html += `<li>${task.name} (Due: ${task.dueDate})<button onclick="deleteTask(${i})">Delete</button></li>`;
-    }
-
-    container.innerHTML = html;
-}
-
-// Optionally render any preexisting tasks on load
-document.addEventListener('DOMContentLoaded', displayTask);
